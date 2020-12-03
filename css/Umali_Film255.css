@@ -1,0 +1,23 @@
+.windowFrame video {
+    position: absolute;
+    overflow: hidden;
+    top: 50px;
+}
+.windowFrame #First_London {
+    clip-path: inset(0% 75% 0% 0%);
+}
+
+.windowFrame #Second_Cat720b {
+    clip-path: inset(0% 50% 0% 25%);
+}
+
+.windowFrame #Third_Cat720 {
+	clip-path: inset(0% 25% 0% 50%)
+}
+
+.windowFrame #Fourth_Birds {
+	clip-path: inset(0% 0% 0% 75%)
+}
+body button {
+    position: relative;
+}

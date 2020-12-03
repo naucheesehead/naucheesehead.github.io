@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>template_croppingClipPath</title>
+<link href="css/Umali_Film255.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+        <div>
+    <button onClick="playAll()">PLAY</button>
+    </div>
+
+<div class="windowFrame">
+  <video width="1024" height="576" id="First_London" onMouseOver="stopVid1()" onMouseOut="playVid1()" loop="loop" >
+    <source src="videos/11am.mp4" type="video/mp4">
+  </video>
+  <video width="1024" height="576" id="Second_Cat720b"  onMouseOver="stopVid2()" onMouseOut="playVid2()" loop="loop" >
+    <source src="videos/2pm.mp4" type="video/mp4">
+  </video>
+  <video width="1024" height="576" id="Third_Cat720"  onMouseOver="stopVid3()" onMouseOut="playVid3()" loop="loop" >
+    <source src="videos/4pm.mp4" type="video/mp4">
+  </video>
+  <video width="1024" height="576" id="Fourth_Birds" onMouseOver="stopVid4()" onMouseOut="playVid4()" loop="loop" >
+    <source src="videos/2am.mp4" type="video/mp4">
+  </video>
+</div>
+
+<script>
+
+var morning = "videos/1 compressed.mp4";
+var midday = "videos/2 compressed.mp4";
+var evening = "videos/3 compressed.mp4";
+var night = "videos/4 compressed.mp4";
+	
+var v1=document.getElementById("First_London");
+var v2=document.getElementById("Second_Cat720b");
+var v3=document.getElementById("Third_Cat720");
+var v4=document.getElementById("Fourth_Birds");
+
+function playAll(){
+    v1.play();
+    v2.play();
+    v3.play();
+    v4.play();
+}
+
+function stopVid1(){
+    v1.pause();
+}
+    
+function playVid1(){
+    v1.play();
+}
+    
+function stopVid2(){
+    v2.pause();
+}
+    
+function playVid2(){
+    v2.play();
+}
+
+function stopVid3(){
+    v3.pause();
+}
+    
+function playVid3(){
+    v3.play();
+}
+
+function stopVid4(){
+    v4.pause();
+}
+    
+function playVid4(){
+    v4.play();
+}
+
+
+</script>
+
+</body>
+</html>
